@@ -1,14 +1,63 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900|Roboto+Mono:300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+/* Body Element */
+body.homepage {
+  border: none;
+  padding: 0;
+}
+body {
+  font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.78;
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  min-height: 100vh;
+  margin: 0;
+  letter-spacing: 0.8px;
+}
+
+/* Borders */
+/* prettier-ignore */
+#site-border-bottom,#site-border-left,#site-border-right,#site-border-top {
+  background: #000;
+  position: fixed;
+  z-index: 1;
+}
+/* prettier-ignore */
+#site-border-left, #site-border-right {
+  top: 0;
+  bottom: 0;
+  width: 10px;
+}
+#site-border-left {
+  left: 0;
+}
+#site-border-right {
+  right: 0;
+}
+#site-border-bottom,
+#site-border-top {
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+#site-border-top {
+  top: 0;
+}
+#site-border-bottom {
+  bottom: 0;
+}
+
+/* Unexamined */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
-}
+
 article,
 aside,
 details,
@@ -256,13 +305,7 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
-body {
-  font-family: Roboto Mono, Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  line-height: 1.78;
-  color: #000;
-  background-color: #fff;
-}
+
 button,
 input,
 select,
@@ -4697,46 +4740,7 @@ button.close {
     display: none !important;
   }
 }
-#site-border-bottom,
-#site-border-left,
-#site-border-right,
-#site-border-top {
-  background: #000;
-  position: fixed;
-  z-index: 1;
-}
-#site-border-left,
-#site-border-right {
-  top: 0;
-  bottom: 0;
-  width: 10px;
-}
-#site-border-left {
-  left: 0;
-}
-#site-border-right {
-  right: 0;
-}
-#site-border-bottom,
-#site-border-top {
-  left: 0;
-  right: 0;
-  height: 10px;
-}
-#site-border-top {
-  top: 0;
-}
-#site-border-bottom {
-  bottom: 0;
-}
-body {
-  padding: 10px;
-  min-height: 100vh;
-}
-body.minimal {
-  border: none;
-  padding: 0;
-}
+
 .hero-full-container {
   height: 100vh;
 }
@@ -4836,7 +4840,7 @@ body.minimal {
   border-color: #f0ad4e;
   background-color: #f0ad4e;
 }
-body,
+
 p {
   font-weight: 300;
   letter-spacing: 0.8px;
