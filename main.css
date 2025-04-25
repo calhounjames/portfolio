@@ -31,27 +31,19 @@ body {
   top: 0;
   bottom: 0;
   width: 10px;
-}
-#site-border-left {
   left: 0;
-}
-#site-border-right {
   right: 0;
 }
-#site-border-bottom,
-#site-border-top {
+/* prettier-ignore */
+#site-border-bottom, #site-border-top {
   left: 0;
   right: 0;
   height: 10px;
-}
-#site-border-top {
   top: 0;
-}
-#site-border-bottom {
   bottom: 0;
 }
 
-/* Unexamined */
+/********************************** Unexamined **************************************/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
